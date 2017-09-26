@@ -6,15 +6,55 @@
     android:layout_height="match_parent"
     tools:context="com.example.aluno.localizacao.MainActivity">
 
-    <TextView
-        android:layout_width="173dp"
-        android:layout_height="25dp"
-        android:text="Aplicativo de Localização"
+<
+
+    <EditText
+        android:id="@+id/etLocationLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Longitude"
+        app:layout_constraintBottom_toTopOf="@+id/etLocationLong"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <EditText
+        android:id="@+id/etLocationLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="224dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Latitude"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Localização "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteY="240dp"
-        app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintVertical_bias="0.306" />
 
 </android.support.constraint.ConstraintLayout>
